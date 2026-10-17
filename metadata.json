@@ -1,0 +1,6 @@
+{
+  "name": "Filip Rehburg · Academic Portfolio & Typst CV",
+  "description": "Minimal, lively academic website for Filip Rehburg (MSc in Logic, ILLC UvA). Features research publications, projects, Typst-styled notes, CV download, and theme customization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
