@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Code, ExternalLink, GraduationCap, Pin, ArrowUpRight, BookOpen, ChevronRight, SlidersHorizontal } from 'lucide-react';
 import { PROFILE_DATA } from '../data/profile.ts';
 import { ColorTheme } from '../utils/theme.ts';
@@ -44,6 +44,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
     }
   };
 
+  const [imageSrc, setImageSrc] = useState<string>(PROFILE_DATA.photoUrl);
+
   return (
     <div className="space-y-12">
       {/* Bento Profile Grid */}
@@ -52,7 +54,12 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         <div className="lg:col-span-4 bg-white p-6 border border-slate-200 rounded-xl shadow-xs">
           <div className="relative overflow-hidden rounded-lg aspect-square border border-slate-200 bg-slate-100">
             <img
-              src={PROFILE_DATA.photoUrl}
+              src={imageSrc}
+              onError={() => {
+                if (imageSrc !== PROFILE_DATA.fallbackPhotoUrl) {
+                  setImageSrc(PROFILE_DATA.fallbackPhotoUrl);
+                }
+              }}
               alt={PROFILE_DATA.name}
               className="w-full h-full object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-300"
             />

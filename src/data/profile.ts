@@ -104,7 +104,8 @@ export const PROFILE_DATA = {
   statusBadge: "Active MSc · ILLC UvA",
   periodBadge: "2025–Present",
   
-  photoUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDNUBa-dU-U8399P_ZBH53VefvZbZluN1ycv-o3IoKXU8VSkty2LGjVmAhOAkIhCJJ3-s1PYJpqslYE-rYtFt26CJO4W-_APWvAJvDkM0MYmP0K2zgABQJig2sTwT6OVdIssmQ8X9sB4DoAvdhIdCc-sQtT61ufNvgfz_C9MUykFq003l0rzoQ0afge8isJLS3svKlb2ZJRWyXQ5r36mk9luUioLofMzDN4L834vyTNO-fV42TVsMIt",
+  photoUrl: "./profile.jpg",
+  fallbackPhotoUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuDNUBa-dU-U8399P_ZBH53VefvZbZluN1ycv-o3IoKXU8VSkty2LGjVmAhOAkIhCJJ3-s1PYJpqslYE-rYtFt26CJO4W-_APWvAJvDkM0MYmP0K2zgABQJig2sTwT6OVdIssmQ8X9sB4DoAvdhIdCc-sQtT61ufNvgfz_C9MUykFq003l0rzoQ0afge8isJLS3svKlb2ZJRWyXQ5r36mk9luUioLofMzDN4L834vyTNO-fV42TVsMIt",
 
   heroHeadline: "Exploring the intersection of Neuro-Symbolic AI, Reasoning, and Logic.",
   bioParagraph1: "I am currently pursuing my Master of Science in Logic at the Institute for Logic, Language and Computation (ILLC) at the University of Amsterdam. My research investigates how formal logical foundations—such as Datalog, modal logic, and rule-level forgetting—can be synthesized with deep representation models and Graph Neural Networks (GNNs) for robust, interpretable machine reasoning.",
